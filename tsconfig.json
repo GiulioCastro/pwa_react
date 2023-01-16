@@ -1,11 +1,24 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "./src",
+    "paths": {
+        "@/*": ["*"],
+        "@assets/*": ["assets/*"],
+        "@components/*": ["components/*"],
+        "@hooks/*": ["hooks/*"],
+        "@pages/*": ["pages/*"],
+        "@route/*": ["route/*"],
+    },
+    "target": "es6",
     "lib": [
+      "es6",
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,5 +35,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/components/CircularProgressWithLabel/.tsx"  ]
 }
