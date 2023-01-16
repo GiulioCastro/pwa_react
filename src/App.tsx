@@ -10,7 +10,7 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: grey[500],
+      main: grey[50],
     },
     secondary: {
       main: indigo[500],

@@ -6,7 +6,7 @@ export const RoutePaths = {
 }
 
 export interface IRoute {
-	element: /* () => JSX.Element | */ LazyExoticComponent<() => JSX.Element>,
+	element: LazyExoticComponent<() => JSX.Element>,
 	path: string,
 	options?: RouteProps,
 }
